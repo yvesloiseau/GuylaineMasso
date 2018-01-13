@@ -1,0 +1,2 @@
+module GuylaineMassoHelper
+end

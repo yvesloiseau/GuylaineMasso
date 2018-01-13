@@ -1,0 +1,36 @@
+<h1>GuylaineMasso#index</h1>
+<p>Find me in app/views/guylaine_masso/index.html.erb</p>
+<!-- <h1>Welcome to my blog - Interface Design Web discussions</h1> -->
+<!-- <p>Find me in interfacedesignweb.ca</p> -->
+<div class="container-fluid anchor-index" id="index">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <h1>GuylaineMasso#index</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <div class="masso-text-box">
+        <h2 class="masso-title">Bienvenue sur mon site</h2>
+        <h4 class="masso">blablabla,</h4>
+        <h4 class="masso">blablabla,</h4>
+        <h4 class="masso">blablabla</h4>
+        <h4 class="masso">la suite pour bientôt</h4>
+      </div>
+        <div class="image-two">
+          <%= image_tag("Mon_Local.jpg", size: "600x350",
+          alt: "Edit Entry", class: "img-two img-responsive")%>
+       </div>
+
+      <div class="enter-blog-button">
+        <h3>Click to enter blog</h3>
+          <!-- Go back -->
+        <%= button_to "My blog", articles_path,
+          class: 'btn btn-primary btn-sm inline', :method => :get %>
+      </div>
+      <div class="">
+      </div>
+    </div>
+  </div>
+</div>

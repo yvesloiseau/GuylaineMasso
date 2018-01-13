@@ -1,0 +1,266 @@
+// Place all the styles related to the guylaine_masso controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// *********************************************************************************************************
+// *  Styling rules for main index page my_blog                                                            *
+// *********************************************************************************************************
+// Place all the styles related to the myBlog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  width: 100%;
+  margin: 0;
+}
+
+p, ol, ul, td {
+  margin:0;
+}
+
+To put in place in next version of blog
+//html, body {
+//    font-size: 16px;
+//}
+
+// ******************************************************
+// *  Main styling rule                                 *
+// ******************************************************
+.img-two {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-about {
+  border-radius: 50%;
+  width: 25%; // 300px;
+  height: 30.5em;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.masso-title {
+  width: 75%;
+}
+
+.masso-text-box {
+  width: 50%;
+  height: 10em;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.masso {
+  padding-left: 15px;
+}
+
+p, ol, ul, td {
+  margin:0;
+}
+
+.about-tools {
+  width: 90%;
+  height: auto;
+}
+
+.about-ruby-and-rails {
+  width: 70%;
+  height: auto;
+}
+
+.more-info-about {
+  width: 70%;
+  height: auto;
+}
+
+.about-page-indent {
+  padding-left: 15px;
+  width: 100%;
+  height: auto;
+
+}
+
+.contact-header  {
+  display: inline-block;
+  width: 100%; // 55.55555556%;  // 800px;
+  height: auto;
+}
+
+.contact-phone  {
+//  display: inline-block;
+  width: 100%; // 34.72222222%;  // 500px;
+  height: auto;
+}
+
+.my-background  {
+  width: 90%;  // 55.55555556%;  // 800px;
+  height: auto;
+}
+
+.more-info  {
+  width: 100%; //34.72222222%;  // 500px;
+  height: auto;
+}
+
+.feedback-message {
+  width: 100%;  // 55.55555556%;  // 800px;
+  height: auto;
+}
+
+.contact-page-indent {
+  padding-left: 5px;
+}
+
+.other-work {
+  padding-left:15px;
+}
+
+.rwd-line {
+  display: inline; //block;
+}
+
+.form.form-contact-form {
+  width:80%;
+}
+
+// ******************************************************
+// *  Anchor tags and pages height                      *
+// ******************************************************
+.anchor-about {
+  padding-top: 80px;
+  }
+
+.anchor-contact {
+  padding-top: 80px;  //*30px;*/
+  padding-left: 1em; //*12px;*/
+  padding-right: 0px;
+  }
+
+.anchor-index {
+  padding-top: 90px;
+  }
+
+div#index.container-fluid.anchor-index {
+  height: 700px;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+div#about.container-fluid.work.anchor-about {
+  height: 690px;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+div#contactus.container-fluid.anchor-contact {
+  height: 700px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+.thank-You-popup {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  padding-top: 5px;  //*30px;*/
+  padding-left: 1em; //*12px;*/
+  padding-bottom: 10px;
+  margin-top: 120px;
+  margin-left: 100px;
+ // padding-right: 0px;
+  height: 300px;
+  height: auto;
+  max-width: 40%;
+ // max-height: 100%;
+
+}
+
+.thank-you-button {
+  margin-left: 10px;
+}
+
+.thank-you {
+  padding-left: 0;
+}
+
+.my-background p {
+  padding-left: 5px;
+}
+
+// ******************************************************
+// *  Topographic rules                                 *
+// ******************************************************
+
+.my-background h4,
+ .contact_Page_Indent h4,
+ .contact_email  h4,
+ .contact_phone h4 {
+  color: #264553;
+}
+
+.my-background p {
+  font-size: 1.40em;
+}
+
+.other-work  {
+  font-size: 1.50em;
+}
+
+.thank-you {
+  //font-size: 1.50em;
+}
+
+.enter-blog-button h3 {
+  color:  #333399; //#254451;
+}
+
+.golf-blog {
+  color: #264553; // #5535D2; //blue; //#254451;
+}
+
+.about-tools h3,
+.about-ruby-and-rails h3,
+.more-info-about h3 {
+  color: #333399;
+}
+
+/*****************************************************/
+/*  Min-width = 700px                               */
+/*****************************************************/
+@media (min-width: 700px) {
+  .rwd-line {
+    display: inline;
+  }
+
+}
+
+/*****************************************************/
+/*  Max-width = 480px                                */
+/*****************************************************/
+@media (max-width: 480px) {
+  div#index.container-fluid.anchor-index {
+  max-width: 100%;
+  padding-top: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+}
+
+//  My logos colors:
+// #254553 or #254451
+// #b2d235 or b3d043
+
+// Other colors
+// #707070
+// #99cc00;
+// #fff
+

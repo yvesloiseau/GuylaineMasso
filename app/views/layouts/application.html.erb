@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GuylaineMasso</title>
+    <title>Guylaine Lefebvre Massothérapie</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,4 +11,142 @@
   <body>
     <%= yield %>
   </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GuylaineMasso</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <%= stylesheet_link_tag  'application', media: 'all',
+   'data-turbolinks-track': 'reload' %>
+
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Metatag for mobile applications -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+
+  <!-- <nav class="navbar-inverse nav-upper"> -->
+  <nav class="navbar navbar-inverse navbar-static-top navbar-custom nav-upper"
+  role="navigation">
+    <div class="container-fluid">
+    <!-- <div class="nav-upper"> -->
+    <ul class="nav navbar-nav menu navbar-upper pull-right upper-nav-links">
+      <li><a href="#" class="inline upper">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a>
+      </li>
+          <% if user_signed_in? %>
+            <li class="upper-first-name"><%= current_user.first_name %></li>
+            <li class="upper-nav-links"><%= link_to "Profiles",
+             edit_user_path(current_user),class: "inline upper" %>
+            </li>
+          <% end %>
+
+          <% if user_signed_in? %>
+            <li><%= link_to("Logout", destroy_user_session_path,
+            :method => :delete, class: "inline upper") %></li>
+            <li class="upper-first-name"> / </li>
+            <li><%= link_to "Change pwd", edit_user_registration_path,
+             class: "inline upper" %></li>
+          <% else %>
+            <li><%= link_to("Login", new_user_session_path) %></li>
+            <li class="upper-first-name"> / </li>
+            <li><%= link_to("Sign-up", new_user_registration_path) %></li>
+          <% end %>
+      </ul>
+      <!-- </div> -->
+  </div>
+</nav>
+
+
+  <nav class="navbar navbar-inverse navbar-custom"
+  role="navigation">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="project-name navbar-brand">
+        <%= link_to root_path do %>
+          <%= image_tag("Guylaine_Masso_Logo.jpg", size: "50x50",
+          alt: "Edit Entry", class: "logoimg")%>
+        <% end %>
+
+        </div>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav menu">
+          <li><%= link_to "À propos", guylaine_masso_apropos_path %> </li>
+          <li><%= link_to "Contact",  guylaine_masso_contact_path %> </li>
+          <li><%= link_to "Autres liens", guylaine_masso_autresliens_path %> </li>
+          </li>
+          <li><%= link_to "Rendez-vous", orders_path %> </li>
+
+        </ul>
+
+        </div>
+
+    </div>
+  </nav>
+
+  <!-- Flash to display a notice to users or any alerts -->
+  <% if notice %>
+    <p id="notice"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <div id="alert-area">
+      <p class="alert alert-danger"><%= alert %></p>
+    </div>
+  <% end %>
+
+  <!-- Display all partial pages -->
+  <%= yield %>
+
+  <footer>
+  &copy; 2018 Guylaine Lefebvre Massothérapie
+  <div class="container-fluid footer-class anchor-footer" id="footer">
+    <div class="row" id="footer-page">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- <div class="col-md-4 col-xs-8"> -->
+        <h3>My social links</h3>
+        <ul class="social-links">
+          <li>
+            <a href="http://linkedin.com/in/yves-loiseau-66980312" target="_blank">
+              <%= image_tag("LinkedIn.png", size: "20x20",
+               alt: "LinkedIn tag")%>
+            </a></li>
+          <li>
+            <a href="https://twitter.com/interface_y" target="_blank">
+              <%= image_tag("social-twitter_v1.png", size: "20x20",
+               alt: "Twitter tag")%>
+            </a></li>
+          <li>
+            <a href="https://www.facebook.com/InterfaceDesignweb"target="_blank">
+              <%= image_tag("Facebook.png", size: "20x20",
+               alt: "Facebook tag")%>
+            </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+</body>
 </html>
