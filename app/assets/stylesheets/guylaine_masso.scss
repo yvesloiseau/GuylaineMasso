@@ -41,6 +41,42 @@ To put in place in next version of blog
   height: 30.5em;
 }
 
+img.logoimg {
+  margin-right: 50px;
+}
+
+//logoimg_about {
+ //display: inline-block;
+//}
+
+.logo-FQM {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.h2_apropos {
+  width: 600px;
+  display: inline-block;
+}
+
+.h2_articles {
+  width: 1000px;
+  display: inline-block;
+}
+
+h4.h4_logo {
+  width: 200px;
+  display: inline;
+}
+
+.articles-h5 {
+  display: inline-block;
+}
+
+.apropos-top {
+  margin-bottom: 30px;
+}
+
 .center {
   margin-right: auto;
   margin-left: auto;
@@ -57,6 +93,10 @@ To put in place in next version of blog
   margin-bottom: 40px;
 }
 
+div.col-md-6.col-xs-6.mission {
+  padding-left: 15px;
+}
+
 .masso {
   padding-left: 15px;
 }
@@ -65,26 +105,10 @@ p, ol, ul, td {
   margin:0;
 }
 
-.about-tools {
-  width: 90%;
-  height: auto;
-}
-
-.about-ruby-and-rails {
-  width: 70%;
-  height: auto;
-}
-
-.more-info-about {
-  width: 70%;
-  height: auto;
-}
-
 .about-page-indent {
   padding-left: 15px;
   width: 100%;
   height: auto;
-
 }
 
 .contact-header  {
@@ -97,6 +121,18 @@ p, ol, ul, td {
 //  display: inline-block;
   width: 100%; // 34.72222222%;  // 500px;
   height: auto;
+}
+
+.name-contactUs-form {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.message-contactUs-form {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
 }
 
 .my-background  {
@@ -118,23 +154,53 @@ p, ol, ul, td {
   padding-left: 5px;
 }
 
-.other-work {
-  padding-left:15px;
-}
-
-.rwd-line {
-  display: inline; //block;
-}
-
 .form.form-contact-form {
   width:80%;
+}
+
+.border-articles {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 1350px;
+}
+
+p.services  {
+  margin-top: 10px;
+}
+
+.thankyou-popup {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  padding-top: 5px;  //*30px;*/
+  padding-left: 1em; //*12px;*/
+  padding-bottom: 10px;
+  margin-top: 120px;
+  margin-left: 100px;
+ // padding-right: 0px;
+  height: 300px;
+  height: auto;
+  max-width: 40%;
+ // max-height: 100%;
+
+}
+
+.thankyou-button {
+  margin-left: 10px;
+}
+
+label {
+  display: block;
 }
 
 // ******************************************************
 // *  Anchor tags and pages height                      *
 // ******************************************************
 .anchor-about {
-  padding-top: 80px;
+  padding-top: 20px;
   }
 
 .anchor-contact {
@@ -144,7 +210,7 @@ p, ol, ul, td {
   }
 
 .anchor-index {
-  padding-top: 90px;
+  padding-top: 25px;
   }
 
 div#index.container-fluid.anchor-index {
@@ -155,6 +221,20 @@ div#index.container-fluid.anchor-index {
 
 div#about.container-fluid.work.anchor-about {
   height: 690px;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+div#contactus.container-fluid.anchor-contact {
+  height: 700px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+div#contactus.container-fluid.anchor-contact {
+  height: 700px;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   }
@@ -195,10 +275,14 @@ div#contactus.container-fluid.anchor-contact {
   padding-left: 5px;
 }
 
+
 // ******************************************************
 // *  Topographic rules                                 *
 // ******************************************************
 
+.h3_apropos {
+  color: #000887;
+}
 .my-background h4,
  .contact_Page_Indent h4,
  .contact_email  h4,
@@ -208,6 +292,91 @@ div#contactus.container-fluid.anchor-contact {
 
 .my-background p {
   font-size: 1.40em;
+}
+
+.apropos-masso-h5,  {
+  font-weight: bold;
+  font-size: 1.35em;
+  color: #971249;
+}
+
+.masso-h5, .services-masso-h5,  {
+  font-weight: bold;
+  font-size: 1.50em;
+  color: #000887;
+}
+
+.articles-h5 {
+  font-weight: bold;
+  font-size: 2em;
+  color: #000887;
+}
+
+.border-articles {
+  border-style: solid;
+  border-color: #971249; //#000887;
+}
+
+
+.services p {
+  font-size: .75em;
+}
+
+
+.border-articles h5 {
+  font-size: 2em;
+}
+
+.border-articles p {
+  color: #337ab7; //#971249; //#000887;
+  font-size: 1.5em;
+}
+
+.articles {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.border-articles p {
+  font-size: 1.5em;
+}
+
+div.panel-heading, div.panel.panel-default {
+  background-color: white!important;
+  border-color: white!important;
+  border-style: none!important;
+}
+
+.masso-h4 {
+  font-size: 1.45em;
+}
+
+.masso-bold {
+  font-weight: bold;
+  color: #971249;
+}
+
+.mission-masso {
+  font-size: 1.35em;
+}
+
+.about-masso {
+  font-size: 1.25em;
+ // font-weight: bold;
+}
+
+.apropos-masso, services-masso {
+  font-size: 1.25em;
+}
+
+.apropos-masso-bold, masso-bold {
+  font-size: 1.50em;
+  font-weight: bold;
+}
+
+.detail-services-masso {
+  font-size: 1.50em;
+  color: #971249;
 }
 
 .other-work  {
@@ -229,9 +398,57 @@ div#contactus.container-fluid.anchor-contact {
 .about-tools h3,
 .about-ruby-and-rails h3,
 .more-info-about h3 {
-  color: #333399;
+  color: #5535D2; // #333399;
 }
 
+/*****************************************************/
+/*  Rule test section                                */
+/*****************************************************/
+.services {
+  display: inline-block;
+  color: #DCD9CD; //#971249;
+}
+
+/*  FAQ section rules                                */
+
+#accordion {
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.panel-body {
+  width:100%;
+  margin-left: 10px;
+}
+
+.panel-body p,
+.panel-body aside {
+  width:100%;
+}
+
+.question_mark {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 12.5em;
+  height: 25em;
+}
+
+.container.faq {
+  width: 105%;
+  padding-right: 35px;
+  padding-left: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.phone {
+  width: 300px;
+}
 /*****************************************************/
 /*  Min-width = 700px                               */
 /*****************************************************/

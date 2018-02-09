@@ -10,8 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+    *= require_self
+    *= require 'guylaine_masso.scss'
+  *= require_tree .
  */
 
  .container-fluid {
@@ -46,12 +47,16 @@ nav {
   }
 
   .navbar-nav>li>a {
-      padding-top: 30px;
+      padding-top: 70px;
       padding-bottom: 20px;
   }
 
+div.navbar-collapse.collapse {
+  height: 149px!important;
+  /*height: auto;*/
+}
   div.project-name.navbar-brand {
-   padding-top: 10px;
+   padding-top: 0px;
    padding-bottom: 25px;
    margin-bottom: 5px;
   }
@@ -114,25 +119,28 @@ ul.social-links {
 }
 
 .navbar-custom {
-  background-color: #fff; /* #9d9d9d; #264553;*/
+  background-color: #971249; /* #7B68EE; /*#9d9d9d; /*#fff; /* #9d9d9d; #264553;*/
   color: white; /* #ffffff;*/
   border-radius:0;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #264553; /* #9d9d9d;*/
+    color: white; /*#264553; /* #9d9d9d;*/
 }
+
+
+
 
 h1,
 h2,
 h3 { font-family: Futura, Helvetica, Arial, sans-serif; }
 
 h1,h2 {
-  color: #3366cc; //#5535D2; /*  #1158dc;*/
+  color: #971249; /*#3366cc; //#5535D2; /*  #1158dc;*/
 }
 
 h3 {
-  color: #3399ff; //blue;
+  color: #3366cc; /* 3399ff; //blue;*/
 }
 
 p {
@@ -147,15 +155,15 @@ p {
 
 footer,
 footer h3 {
-  color: #254451; /*#264553;*/
+  color: white; /*#254451; /*#264553;*/
 }
 
 footer a {
-  color: #264553; /* white;*/
+  color: white; /*#264553; /* white;*/
 }
 
 footer {
-  background-color: #9d9d9d;  /*#264553; grey;  #101010; #809af3;*/
+  background-color: #971249; /*#9d9d9d;  /*#264553; grey;  #101010; #809af3;*/
 }
 
 .alert {

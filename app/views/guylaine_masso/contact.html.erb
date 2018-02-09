@@ -1,0 +1,69 @@
+<!-- **********************************************************************  -->
+<div class="container-fluid contactc anchor-contact" id="contactus">
+  <div class="row" id="work">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+
+      <div class="contact-header">
+        <!-- <h1>Contact Page</h1> -->
+        <h2>Guylaine Lefebvre - Massothérapeute</h2>
+        <div class="contact-email">
+          <h3>Pour prendre un rendez-vous :
+            <span class="email-bold rwd-line">
+            <strong>(514) 973-6962</strong>
+            </span>
+          </h3>
+        </div>
+      </div>
+
+      <div class="contact-email">
+        <h3>Ou : <span class="email-bold rwd-line">
+        <strong>Écrivez-moi un message avec vos coordonnées.</strong></span></h3>
+      </div>
+
+      <div class="more-info">
+        <h3>Vous pouvez également consulter mes réseaux sociaux :</h3>
+        <div class="contact-page-indent">
+          <h4></h4>
+          <!-- <p>Thanks you and have a nice day</p> -->
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Form to caputre users feedback and to get their contact information -->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <h1>Laissez-moi un message par courriel</h1>
+      <%= flash[:notice] %>
+
+      <%= form_tag("/guylaine_masso/thank_you") do %>
+      <div class="field-group-contactUs-form">
+        <%= label_tag :nom %>
+        <%= text_field_tag(:name, nil, class: "name-ContactUs-Form",
+        placeholder: "Inscrivez votre nom", style: 'width:60%;') %>
+      </div>
+      <div class="field-group-contactUs-form">
+        <%= label_tag :courriel %>
+        <%= email_field_tag :email, nil, class: "name_ContactUs_Form",
+        placeholder: "Inscrivez votre courriel", style: 'width:55%;' %>
+      </div>
+      <div class="field-group-contactUs-form">
+        <%= label_tag :téléphone %>
+        <%= telephone_field_tag :phone, nil, class: "name_ContactUs_Form",
+        placeholder: "Inscrivez votre numéro de téléphone", style: 'width:60%;' %>
+      </div>
+
+      <div class="field-group-contactUs-form">
+        <%= label_tag :message %>
+        <%= text_area_tag :message, nil,
+        class: "message_ContactUs_Form", placeholder: "Votre message",
+          style: 'width:60%;', rows: 20 %>
+      </div>
+
+      <%= submit_tag "Send", class: "contact-submit btn btn-primary btn-sm" %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+

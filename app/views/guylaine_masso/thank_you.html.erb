@@ -1,0 +1,20 @@
+<div class="panel panel-default thankyou-popup">
+  <div class="panel-body">
+    <p>Mreci de nous écrire! </p>
+    <br>
+    <p>Nous avons reçu votre message. Nous vous répondrons sous peu.</p>
+    <br>
+    <p>Passez une agréable journée!</p>
+  </div>
+
+  <div class="thankyou-button">
+    <!-- Back to Product list -->
+    <%= button_to "Back", guylaine_masso_contact_path,
+      class: 'btn btn-primary btn-sm inline', :method => :get %>
+
+    <!-- Go back HOME-->
+    <%= button_to "Home", root_path,
+      class: 'btn btn-primary btn-sm inline', :method => :get %>
+  </div>
+
+</div>

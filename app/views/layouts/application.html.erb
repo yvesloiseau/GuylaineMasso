@@ -2,24 +2,10 @@
 <html>
   <head>
     <title>Guylaine Lefebvre Massothérapie</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>GuylaineMasso</title>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet"
-   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
    <%= stylesheet_link_tag  'application', media: 'all',
    'data-turbolinks-track': 'reload' %>
@@ -37,40 +23,6 @@
 
   <body>
 
-  <!-- <nav class="navbar-inverse nav-upper"> -->
-  <nav class="navbar navbar-inverse navbar-static-top navbar-custom nav-upper"
-  role="navigation">
-    <div class="container-fluid">
-    <!-- <div class="nav-upper"> -->
-    <ul class="nav navbar-nav menu navbar-upper pull-right upper-nav-links">
-      <li><a href="#" class="inline upper">
-          <span class="glyphicon glyphicon-shopping-cart"></span>
-        </a>
-      </li>
-          <% if user_signed_in? %>
-            <li class="upper-first-name"><%= current_user.first_name %></li>
-            <li class="upper-nav-links"><%= link_to "Profiles",
-             edit_user_path(current_user),class: "inline upper" %>
-            </li>
-          <% end %>
-
-          <% if user_signed_in? %>
-            <li><%= link_to("Logout", destroy_user_session_path,
-            :method => :delete, class: "inline upper") %></li>
-            <li class="upper-first-name"> / </li>
-            <li><%= link_to "Change pwd", edit_user_registration_path,
-             class: "inline upper" %></li>
-          <% else %>
-            <li><%= link_to("Login", new_user_session_path) %></li>
-            <li class="upper-first-name"> / </li>
-            <li><%= link_to("Sign-up", new_user_registration_path) %></li>
-          <% end %>
-      </ul>
-      <!-- </div> -->
-  </div>
-</nav>
-
-
   <nav class="navbar navbar-inverse navbar-custom"
   role="navigation">
     <div class="container-fluid">
@@ -85,7 +37,7 @@
         </button>
         <div class="project-name navbar-brand">
         <%= link_to root_path do %>
-          <%= image_tag("Guylaine_Masso_Logo.jpg", size: "50x50",
+          <%= image_tag("Guylaine_Masso_Logo_V1.jpg", size: "150x150",
           alt: "Edit Entry", class: "logoimg")%>
         <% end %>
 
@@ -95,10 +47,11 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav menu">
           <li><%= link_to "À propos", guylaine_masso_apropos_path %> </li>
+          <li><%= link_to "Services",  guylaine_masso_services_path %> </li>
+          <li><%= link_to "Tarifs",  guylaine_masso_tarifs_path %> </li>
           <li><%= link_to "Contact",  guylaine_masso_contact_path %> </li>
-          <li><%= link_to "Autres liens", guylaine_masso_autresliens_path %> </li>
-          </li>
-          <li><%= link_to "Rendez-vous", orders_path %> </li>
+          <li><%= link_to "Articles",  guylaine_masso_articles_path %> </li>
+          <li><%= link_to "Promotions",  guylaine_masso_promotion_path %> </li>
 
         </ul>
 
@@ -106,6 +59,7 @@
 
     </div>
   </nav>
+
 
   <!-- Flash to display a notice to users or any alerts -->
   <% if notice %>
@@ -126,20 +80,15 @@
     <div class="row" id="footer-page">
       <div class="col-xs-12 col-sm-6 col-md-4">
       <!-- <div class="col-md-4 col-xs-8"> -->
-        <h3>My social links</h3>
+        <h3>Liens réseaux sociaux</h3>
         <ul class="social-links">
           <li>
-            <a href="http://linkedin.com/in/yves-loiseau-66980312" target="_blank">
+            <a href="http://linkedin.com/in/guylaine-lefebvre-74b22721" target="_blank">
               <%= image_tag("LinkedIn.png", size: "20x20",
                alt: "LinkedIn tag")%>
             </a></li>
           <li>
-            <a href="https://twitter.com/interface_y" target="_blank">
-              <%= image_tag("social-twitter_v1.png", size: "20x20",
-               alt: "Twitter tag")%>
-            </a></li>
-          <li>
-            <a href="https://www.facebook.com/InterfaceDesignweb"target="_blank">
+            <a href="https://www.facebook.com/Guylaine-Lefebvre-massothérapeute-1445595255704434"target="_blank">
               <%= image_tag("Facebook.png", size: "20x20",
                alt: "Facebook tag")%>
             </a></li>
