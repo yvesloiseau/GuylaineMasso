@@ -54,10 +54,32 @@ img.logoimg {
   padding-bottom: 20px;
 }
 
-.h2_apropos {
+
+h4.h4-conception {
+float: right;
+margin-top: 5px;
+}
+
+h4.h4-conception-nom {
+float: left;
+padding-left: 50px;
+}
+
+.copyright {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.h2-apropos {
   width: 600px;
   display: inline-block;
 }
+
+.h4-conception {
+  display: inline-block;
+}
+
 
 .h2_articles {
   width: 1000px;
@@ -209,7 +231,8 @@ label {
   padding-right: 0px;
   }
 
-.anchor-index {
+.anchor-index, .anchor-contact, .anchor-tarifs, .anchor-article,
+.anchor-about, .anchor-services {
   padding-top: 25px;
   }
 
@@ -280,8 +303,12 @@ div#contactus.container-fluid.anchor-contact {
 // *  Topographic rules                                 *
 // ******************************************************
 
-.h3_apropos {
+.h3-apropos {
   color: #000887;
+}
+
+.h4-conception {
+  color: white;
 }
 .my-background h4,
  .contact_Page_Indent h4,
