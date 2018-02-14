@@ -79,6 +79,12 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  #  Changement du 14 fevrier 2018
+
+  #  Telling mailer where the assets are
+  config.action_mailer.asset_host =  "https://guylainemasso.herokuapp.com"
+  #  Fin du changeemnt 14 fevrier 2018
+
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
