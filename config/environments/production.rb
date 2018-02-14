@@ -22,8 +22,16 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+# Changement fait le 14 fevrier 2018
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+#  config.assets.compile = false
+# POTENTIALLY REMOVE THE NEXT LINE
+  config.assets.initialize_on_precompile = false
+
+  # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = true
+
+#  Fin du changeemnt 14 fevrier 2018
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
