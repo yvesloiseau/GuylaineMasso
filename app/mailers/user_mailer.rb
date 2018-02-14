@@ -5,9 +5,10 @@ class UserMailer < ApplicationMailer
   @message = message
   @phone = phone
   @email = email
+  @name = name
 
     mail(:from => email,
-        :to => "interface_yves@hotmail.com",
+        :to => "glefebvre17@yahoo.com",
         :subject => "Un nouveau message de la part de : #{name}"
         )
   end

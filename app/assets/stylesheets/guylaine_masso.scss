@@ -133,6 +133,12 @@ p, ol, ul, td {
   height: auto;
 }
 
+.articles-page-indent {
+  padding-left: 10px;
+  width: 100%;
+  height: auto;
+}
+
 .contact-header  {
   display: inline-block;
   width: 100%; // 55.55555556%;  // 800px;
@@ -404,6 +410,10 @@ div.panel-heading, div.panel.panel-default {
 .detail-services-masso {
   font-size: 1.50em;
   color: #971249;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .other-work  {
