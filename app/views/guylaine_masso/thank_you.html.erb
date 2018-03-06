@@ -1,19 +1,19 @@
 <div class="panel panel-default thankyou-popup">
   <div class="panel-body">
-    <p>Merci de m'écrire! </p>
+    <p><%=t('.mailer_merci')%></p>
     <br>
-    <p>Votre message a été envoyé. Nous vous répondrons sous peu.</p>
+    <p><%=t('.mailer_message_envoye')%></p>
     <br>
-    <p>Passez une agréable journée!</p>
+    <p><%=t('.mailer_bonne_journee')%></p>
   </div>
 
   <div class="thankyou-button">
     <!-- Back to Product list -->
-    <%= button_to "Page Contact", guylaine_masso_contact_path,
+    <%= button_to 'Page Contact', contact_path,
       class: 'btn btn-primary btn-sm inline', :method => :get %>
 
     <!-- Go back HOME-->
-    <%= button_to "Page principale", root_path,
+    <%= button_to 'Page principale', root_path,
       class: 'btn btn-primary btn-sm inline', :method => :get %>
   </div>
 

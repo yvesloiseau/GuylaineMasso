@@ -23,10 +23,27 @@
 
   <body>
 
+  <!-- <nav class="navbar-inverse nav-upper"> -->
+  <nav class="navbar navbar-inverse navbar-static-top navbar-custom nav-upper"
+  role="navigation">
+    <div class="container-fluid upper-nav-div">
+    <!-- <div class="nav-upper"> -->
+    <ul class="nav navbar-nav menu navbar-upper pull-right upper-nav-links upper-ul">
+      <!-- locale code to change language was here -->
+      <% if I18n.locale == I18n.default_locale %>
+        <li><%= link_to 'English', url_for( :locale => 'en')  %></li>
+      <% else %>
+        <li><%= link_to 'Français', url_for( :locale => 'fr') %></li>
+      <% end %>
+      <!-- end of I18n language selection -->
+      </ul>
+      <!-- </div> -->
+   </div>
+  </nav>
+
   <nav class="navbar navbar-inverse navbar-custom"
   role="navigation">
     <div class="container-fluid">
-
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse"
         data-target=".navbar-collapse">
@@ -37,7 +54,7 @@
         </button>
         <div class="project-name navbar-brand">
         <%= link_to root_path do %>
-          <%= image_tag("Guylaine_Masso_Logo_V1.jpg", size: "150x150",
+          <%= image_tag("Guylaine_Masso_Logo_V1.jpg", size: "135x135",
           alt: "Edit Entry", class: "logoimg")%>
         <% end %>
 
@@ -46,12 +63,12 @@
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav menu">
-          <li><%= link_to "À propos", guylaine_masso_apropos_path %> </li>
-          <li><%= link_to "Services",  guylaine_masso_services_path %> </li>
-          <li><%= link_to "Tarifs",  guylaine_masso_tarifs_path %> </li>
-          <li><%= link_to "Contact",  guylaine_masso_contact_path %> </li>
-          <li><%= link_to "Articles",  guylaine_masso_articles_path %> </li>
-          <li><%= link_to "Promotions",  guylaine_masso_promotion_path %> </li>
+          <li><%= link_to t('apropos_page_title'), apropos_path %> </li>
+          <li><%= link_to t('services_page_title'),  services_path %> </li>
+          <li><%= link_to t('tarifs_page_title'),  tarifs_path %> </li>
+          <li><%= link_to t('contact_page_title'),  contact_path %> </li>
+          <li><%= link_to t('articles_page_title'),  articles_path %> </li>
+          <li><%= link_to t('promotion_page_title'),  promotion_path %> </li>
 
         </ul>
 
@@ -70,24 +87,25 @@
       <p class="alert alert-danger"><%= alert %></p>
     </div>
   <% end %>
-
   <!-- Display all partial pages -->
   <%= yield %>
 
   <footer>
   <div class="copyright">
-    &copy; 2018 Guylaine Lefebvre Massothérapeute
+    &copy; <%= t('copyright')%>
   </div>
 
   <div class="conception">
-    <h4 class="h4-conception">Conception: InterfaceDesignWeb</h4>
+    <h4 class="h4-conception">            <a href="http://www.interfacedesignweb.ca"target="_blank">
+              Conception: InterfaceDesignWeb
+            </h4>
   </div>
 
   <div class="container-fluid footer-class anchor-footer" id="footer">
     <div class="row" id="footer-page">
       <div class="col-xs-6 col-sm-6 col-md-6">
       <!-- <div class="col-md-4 col-xs-8"> -->
-        <h3>Liens réseaux sociaux</h3>
+        <h3><%= t('social_network') %></h3>
         <ul class="social-links">
           <li>
             <a href="http://linkedin.com/in/guylaine-lefebvre-74b22721" target="_blank">
@@ -103,7 +121,7 @@
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="conception">
-          <h4 class="h4-conception-nom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Yves Loiseau)</h4>
+          <h4 class="h4-conception-nom">(Yves Loiseau)</h4>
         </div>
       </div>
     </div>

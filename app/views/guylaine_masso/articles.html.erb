@@ -6,22 +6,25 @@
 
 <!-- Accordion title -->
   <div class="panel-group" id="accordion">
-    <h2 class="h2_articles">Renseignements utiles (articles, vidéos, etc.)</h2>
+    <h2 class="h2_articles"><%=t('.article_video')%></h2>
+    <!--<%= I18n.locale %> -->
 
-  <!-- 1ier article - Principaux objectifs de la massothérapie -->
+  <% if I18n.locale == I18n.default_locale %>
+
+    <!-- 1ier article - Principaux objectifs de la massothérapie -->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title articles-h5">
-          <a id="yves" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-circle-arrow-right"></span> Principaux objectifs de la massothérapie</a>
+          <a id="yves" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-circle-arrow-right"></span> <%=t('.article1')%></a>
         </h4>
       </div>
       <div id="collapseOne" class="panel-collapse collapse">
         <div class="panel-body">
           <div class="container faq">
             <div class="border-articles">
-              <p>« Les principaux objectifs de la massothérapie sont de favoriser la détente (musculaire et nerveuse), la circulation sanguine et lymphatique, l’assimilation et la digestion des aliments, l’élimination des toxines, le bon fonctionnement des organes vitaux et l’éveil à une conscience psychocorporelle. » <cite>site Web de Passeport Santé</cite></p>
+              <p>« <%=t('.article1_paragraphe1')%><cite><%=t('.article1_cite')%></cite></p>
               <br>
-              <p>Compte tenu de tous ses bienfaits et de ses effets sur l’ensemble de l’organisme, le massage est essentiel au bien-être, en plus d’être un moyen efficace de prévention de multiples troubles de santé.</p>
+              <p><%=t('.article1_paragraphe2')%></p>
               <br>
             </div>
           </div>
@@ -29,12 +32,12 @@
       </div>
     </div>
 
-  <!-- 2e article  -  La place de la massothérapie clinique dans les soins de santé. -->
+    <!-- 2e article  -  La place de la massothérapie clinique dans les soins de santé. -->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h5 class="panel-title articles-h5">
           <a class="yves" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-circle-arrow-right"></span>
-          La place de la massothérapie clinique dans les soins de santé
+          <%=t('.article2')%>
           <br>
           </a>
         </h5>
@@ -43,28 +46,28 @@
         <div class="panel-body">
           <div class="container faq">
             <div class="border-articles">
-              <p>La médecine occidentale classique utilise trois modalités thérapeutiques principales : pharmacologie, chirurgie et consultation d’un confrère praticien spécialisé. </p>
+              <p><%=t('.article2_paragraphe1')%></p>
               <br>
-              <p>Un des problèmes de l’approche des affections musculaires par la médecine classique est qu’il n’existe pas de spécialité dirigée prioritairement sur les muscles.</p>
+              <p><%=t('.article2_paragraphe2')%></p>
               <br>
-              <p>L’ostéopathie est une approche de la santé qui s’est initialement focalisée sur la manipulation des os et des articulations, mais s’est depuis tournée vers la médecine occidentale classique. Certains ostéopathes sont restés de fervents adeptes de l’examen et du traitement des douleurs par des manipulations articulaires.</p>
+              <p><%=t('.article2_paragraphe3')%></p>
               <br>
-              <p>La chiropractie s’appuie sur le traitement des articulations, notamment au niveau vertébral, et attribue la douleur à de mauvais alignements des articulations vertébrales qui compriment des racines nerveuses. La kinésithérapie ou physiothérapie se fonde sur l’exercice physique et le mouvement pour restaurer une fonction normale des muscles et des articulations.</p>
+              <p><%=t('.article2_paragraphe4')%></p>
               <br>
-              <p>La dernière approche est la manipulation directe des tissus mous, qui relève du domaine de la massothérapie clinique.</p>
-              <p><cite> (extrait de Massothérapie clinique, 2e édition, J. H. Clay et D. M. Pounds)</cite></p>
+              <p><%=t('.article2_paragraphe5')%></p>
+              <p><cite> <%=t('.article2_cite')%></cite></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  <!-- 3e article - Migraines : Les bienfaits du massage. -->
+    <!-- 3e article - Migraines : Les bienfaits du massage. -->
     <div class="panel panel-default">
       <div class="panel-heading" id="faqPanel">
         <h4 class="panel-title articles-h5">
           <a class="yves" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-circle-arrow-right"></span>
-            Migraines : Les bienfaits du massage
+            <%=t('.article3')%>
           </a>
           <!-- <button data-toggle="collapse" class="btn btn-block" data-target="#collapseThree" data-parent="#accordion">Why would you hire me
           </button>
@@ -75,33 +78,33 @@
         <div class="panel-body">
           <div class="container faq articles">
             <div class="border-articles">
-              <p>L’émergence d’une vision holiste de la santé laisse entrevoir pour l’avenir une meilleure compréhension de la maladie et la possibilité de découvrir des moyens encore méconnus pour favoriser la guérison.</p>
+              <p><%=t('.article3_paragraphe1')%></p>
               <br>
-              <p class="masso-bold">La massothérapie s’inscrit bien dans ce mouvement.</p>
+              <p class="masso-bold"><%=t('.article3_paragraphe2')%></p>
               <br>
-              <p>La personne migraineuse a, de toute évidence, plus de chances de retrouver une meilleure qualité de vie si elle demeure active et si elle cherche des solutions en collaboration avec son massothérapeute.</p>
+              <p><%=t('.article3_paragraphe3')%></p>
               <br>
-              <p>Celui-ci peut intervenir, entre autres, dans la phase préliminaire, lorsque les symptômes commencent à se manifester, parce que le massage favorise le relâchement des tensions.</p>
+              <p><%=t('.article3_paragraphe4')%></p>
               <br>
-              <p>Sollicité au cours du massage, le système nerveux central favorise la sécrétion des endorphines, qui ont un rôle à jouer dans la suppression de la douleur.</p>
+              <p><%=t('.article3_paragraphe5')%></p>
               <br>
-              <p>Une intervention en début de crise augmente les chances de réussite; lorsque la migraine est bien installée, une atténuation de la douleur est possible, mais la crise devra faire son temps.</p>
+              <p><%=t('.article3_paragraphe6')%></p>
               <br>
-              <p>Par ailleurs, la massothérapie est bénéfique dans la phase finale de la migraine, particulièrement chez les personnes qui éprouvent alors une période de fatigue ou de dépression.</p>
+              <p><%=t('.article3_paragraphe7')%></p>
               <br>
-              <p>Source : Fédération Québécoise des Massothérapeute agréés</p>
+              <p><%=t('.article3_source')%></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  <!-- 4e article -  -->
+    <!-- 4e article -  -->
     <div class="panel panel-default">
       <div class="panel-heading" id="faqPanel">
         <h4 class="panel-title articles-h5">
           <a class="yves" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-circle-arrow-right"></span>
-            Les bienfaits éprouvés de la massothérapie
+            <%=t('.article4')%>
           </a>
           <!-- <button data-toggle="collapse" class="btn btn-block" data-target="#collapseThree" data-parent="#accordion">Why would you hire me
           </button>
@@ -112,41 +115,43 @@
         <div class="panel-body">
           <div class="container faq articles">
             <div class="border-articles">
-              <p>Par Catherine Bergeron, Coupdepouce.com - 20 mai 2014</p>
+              <p><%=t('.article4_par')%></p>
               <br>
-              <p class="masso-bold">Un massage bien exécuté apporte à celui qui le reçoit un délicieux bien-être. Mieux encore, ses bienfaits vont bien au-delà de la détente!</p>
+              <p class="masso-bold"><%=t('.article4_paragraphe1')%></p>
               <br>
-              <p>La massothérapie est pratiquée depuis quelques milliers d'années dans les pays orientaux. Plus près de nous, avec la multiplication des spas et des centres de santé, ce n'est que récemment que l'engouement s'est réellement fait sentir. Généralement pratiquée avec les mains, les coudes et parfois même les pieds, cette forme de thérapie 100% naturelle marie différentes techniques et manœuvres comme le pétrissage, l'effleurage et les pressions.</p>
+              <p><%=t('.article4_paragraphe2')%></p>
               <br>
-              <p class="masso-bold">Pourquoi consulter?</p>
+              <p class="masso-bold"><%=t('.article4_paragraphe3')%></p>
               <br>
-              <p>Douleurs musculaires et articulatoires, stress, problèmes de circulation sanguine, les raisons de faire appel à un massothérapeute sont multiples. Et bien que la profession ne soit pas reconnue par le système de santé québécois, de nombreux médecins et patients s'entendent sur le fait qu'un massage bien effectué apporte de réels bienfaits à celui qui le reçoit. C'est d'ailleurs ce qu'ont récemment tenté de démontrer le Dr Pierre Arsenault et l'Association professionnelle des massothérapeutes spécialisés du Québec, en rassemblant les résultats de divers essais cliniques et recherches médicales. </p>
+              <p><%=t('.article4_paragraphe4')%></p>
 
               <br>
-              <p>Les données récoltées montrent que la massothérapie peut: </p>
+              <p><%=t('.article4_paragraphe5')%></p>
               <div class="articles-page-indent">
-                <p>• soulager les douleurs musculosquelettiques (douleurs reliées aux muscles, tendons, nerfs, articulations et os);</p>
-                <p>•  avoir un effet positif dans le traitement de la fatigue chronique;</p>
-                <p>•  diminuer le niveau de stress et d'anxiété;</p>
-                <p>•  réduire la fréquence et l'intensité des migraines;</p>
-                <p>•  apaiser les douleurs chroniques et maux de dos, de cou et d'épaules;</p>
-                <p>•  atténuer les désagréments dus à l'inflammation;</p>
-                <p>•  aider les patients atteints de dépression.</p>
+                <p><%=t('.article4_para5_indent1')%></p>
+                <p><%=t('.article4_para5_indent2')%></p>
+                <p><%=t('.article4_para5_indent3')%></p>
+                <p><%=t('.article4_para5_indent4')%></p>
+                <p><%=t('.article4_para5_indent5')%></p>
+                <p><%=t('.article4_para5_indent6')%></p>
+                <p><%=t('.article4_para5_indent7')%></p>
                 <br>
               </div>
-              <p class="masso-bold">Choisir le bon spécialiste</p>
+              <p class="masso-bold"><%=t('.article4_paragraphe6')%></p>
               <br>
-              <p>Aucun ordre professionnel n'encadre actuellement la pratique au Québec. Et même si elle ne comporte aucun danger pour la santé, M. Martin Vallée, président-directeur général de l'<span class="underline">Association professionnelle des massothérapeutes spécialisés du Québec, Mon Réseau Plus</span>, encourage la population à se tourner vers un professionnel compétent qui posera les bonnes questions et prodiguera des soins adaptés à la condition de son client. «Qu'on reçoive un soin dans un spa, dans une clinique privée ou même à domicile, on peut toujours exiger de notre massothérapeute qu'il nous présente une preuve de sa formation et de son appartenance à une association professionnelle.»
+              <p><%=t('.article4_paragraphe7')%><span class="underline"><%=t('.article4_para7_underline1')%></span>, <%=t('.article4_para7_suite1')%>
               </p>
               <br>
-              <p>Il existe présentement différents regroupements de massothérapeutes au Québec. Les deux principaux sont l'<span class="underline">Association professionnelle des massothérapeutes spécialisés du Québec, Mon Réseau Plus</span> et la <span class="underline">Fédération québécoise des massothérapeutes agréés</span>. En visitant le site Internet de ces regroupements, on trouvera une foule d'informations sur le déroulement d'une séance, les bienfaits, les précautions à prendre (en cas de cancer, de diabète, de grossesse, etc.), les différentes formes de soins et de traitements possibles, ainsi qu'un bottin des massothérapeutes accrédités.
+              <p><%=t('.article4_paragraphe8')%><span class="underline"><%=t('.article4_para8_underline1')%></span><%=t('.article4_para8_suite1')%><span class="underline"><%=t('.article4_para8_underline2')%></span><%=t('.article4_para8_suite2')%>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
+  <% else %>
+    <h2 class="h2_articles">New articles coming soon</h2>
+  <% end %>
+
 </div>

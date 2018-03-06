@@ -17,20 +17,30 @@ Rails.application.routes.draw do
     #  Customized devise controller (not using it, was not workng, to be removed)
   #devise_for :users, :controllers => { registrations: 'registrations' }
 
-
-#  get 'my_blog/index'
-#  get 'my_blog/contact'
-#  get 'my_blog/about'
-
-#  get 'articles/new'
-#  get 'articles/index'
-#  get 'comments/index'
-
-#  post 'comments/update'
-
   post 'guylaine_masso/thank_you'
 
+  #root 'guylaine_masso#index'
+
+scope "(:locale)", locale: /en|fr/ do
+    get '/apropos', to: 'guylaine_masso#apropos', as: :apropos
+    get '/contact', to: 'guylaine_masso#contact', as: :contact
+    get '/services', to: 'guylaine_masso#services', as: :services
+    get '/tarifs', to: 'guylaine_masso#tarifs', as: :tarifs
+    get '/articles', to: 'guylaine_masso#articles', as: :articles
+    get '/promotion', to: 'guylaine_masso#promotion', as: :promotion
+  end
+
+#  scope "(/:locale)", locale: /en|fr/ do
+#  resources :products  do
+#    resources :comments
+#  end
+#  resources :orders
+#end
+
+scope "(:locale)", locale: /en|fr/ do
+  get '/:locale' => 'guylaine_masso#index'
   root 'guylaine_masso#index'
+end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

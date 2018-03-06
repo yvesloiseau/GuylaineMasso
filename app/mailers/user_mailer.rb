@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
 
     mail(:from => email,
         :to => "glefebvre17@yahoo.com",
-        :subject => "Un nouveau message de la part de : #{name}"
+        :subject => default_i18n_subject  #{name})
         )
   end
 

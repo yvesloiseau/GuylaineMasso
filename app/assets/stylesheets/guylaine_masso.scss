@@ -61,8 +61,8 @@ margin-top: 5px;
 }
 
 h4.h4-conception-nom {
-float: left;
-padding-left: 50px;
+float: right;
+padding-right: 100px;
 }
 
 .copyright {
@@ -313,9 +313,19 @@ div#contactus.container-fluid.anchor-contact {
   color: #000887;
 }
 
-.h4-conception {
+.h4-conception, .h4-conception-nom{
   color: white;
+  font-size: .65em;
 }
+
+h4.h4-conception >a:hover {
+color: #b2d235;
+}
+
+h4.h4-conception >a:visited {
+color: white;
+}
+
 .my-background h4,
  .contact_Page_Indent h4,
  .contact_email  h4,
@@ -350,11 +360,9 @@ div#contactus.container-fluid.anchor-contact {
   border-color: #971249; //#000887;
 }
 
-
 .services p {
   font-size: .75em;
 }
-
 
 .border-articles h5 {
   font-size: 2em;
