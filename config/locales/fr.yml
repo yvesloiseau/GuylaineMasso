@@ -22,7 +22,7 @@
 fr:
   welcome: "Bienvenue"
   hello: "Bonjour à toutes et à tous"
-  apropos_page_title: "A propos"
+  apropos_page_title: "À propos"
   contact_page_title: "Contact"
   services_page_title: "Services"
   tarifs_page_title: "Tarifs"
@@ -72,6 +72,8 @@ fr:
       m_therapeutique: "Massage thérapeutique"
       m_detente: "Massage de détente"
       m_chaise: "Massage sur chaise"
+      massage_suedois: ""
+      massage_suedois_texte: ""
       le_massage_suedois: "Le massage suédois cinétique :"
       le_massage_suedois_texte: "Il se pratique avec de l’huile, sur une table. La technique englobe les points d’attache musculaires pour favoriser la détente et le relâchement."
       massage_detente: "Le massage de détente : "

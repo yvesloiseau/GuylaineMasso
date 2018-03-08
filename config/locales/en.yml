@@ -35,7 +35,7 @@ en:
   articles_path: "articles"
   promotion_path: "promotion"
   social_network: "Social network links"
-  copyright: "Guylaine Lefebvre Massotherapist"
+  copyright: "Guylaine Lefebvre Massage Therapist"
   conception: "Conception Interface Design Web"
   yves_loiseau: "Yves Loiseau"
   nom_tag: "Name"
@@ -49,7 +49,7 @@ en:
   submit_placeholder: "Send"
   guylaine_masso:
     index:
-      guylaine: "Guylaine Lefebvre Massotherapist"
+      guylaine: "Guylaine Lefebvre Massage Therapist"
       welcome: "Welcome to my site"
       mission: "My mission:"
       mission_paragraphe_1: "To help you enjoy the many benefits of the massage, which are: releasing tensions, restoring mobility, promoting relaxation and increasing the sense of wellbeing."
@@ -59,7 +59,7 @@ en:
       mission_paragraphe_5: "You experience muscle pain? You suffer from migraines or frequent headaches? You feel anxious or are sleep deprived?"
       mission_paragraphe_6: "Massage therapy could be the ideal solution for you."
     apropos:
-      federation: "Membre de la Fédération québécoise des massothérapeutes agréés (FQM)"
+      federation: "Member of Fédération québécoise des massothérapeutes agréés (FQM)"
       formation: "Background:"
       suedois: "Kinetic Sweedish Massage (Institut Kiné Concept, 2014)"
       chaise: "Chair Massage (Institut Kiné Concept, 2015)"
