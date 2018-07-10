@@ -83,7 +83,7 @@ Rails.application.configure do
 
   #  Telling mailer where the assets are
   config.action_mailer.asset_host =  "https://guylainemasso.herokuapp.com"
-  #  Fin du changeemnt 14 fevrier 2018
+  #  Fin du changement 14 fevrier 2018
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
