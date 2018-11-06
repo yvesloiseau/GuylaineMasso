@@ -14,7 +14,8 @@ $primary-color: #333;
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  width: 100%;
+  // background-color: grey;
+  //width: 100%;
   margin: 0;
 }
 
@@ -30,6 +31,11 @@ To put in place in next version of blog
 // ******************************************************
 // *  Main styling rule                                 *
 // ******************************************************
+.image-two {
+  width: auto;
+  height: auto;
+}
+
 .img-two {
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +49,15 @@ To put in place in next version of blog
 
 img.logoimg {
   margin-right: 50px;
+  height: 135px;
+  width: 135px;
 }
+
+.logoimg_about,
+ .logo-FQM {
+ width: auto;
+ height: auto;
+ }
 
 //logoimg_about {
  //display: inline-block;
@@ -72,7 +86,8 @@ padding-right: 100px;
 }
 
 .h2-apropos {
-  width: 600px;
+  width: auto;
+  //width: 600px;
   display: inline-block;
 }
 
@@ -82,12 +97,13 @@ padding-right: 100px;
 
 
 .h2_articles {
-  width: 1000px;
+  width: auto; //1000px;
   display: inline-block;
 }
 
 h4.h4_logo {
-  width: 200px;
+  width: auto;
+  //width: 200px;
   display: inline;
 }
 
@@ -244,17 +260,19 @@ label {
 
 div#index.container-fluid.anchor-index {
   height: 700px;
+  height: auto;
   max-width: 100%;
-  max-height: 100%;
+  // max-height: 100%;
   }
 
 div#about.container-fluid.work.anchor-about {
   height: 690px;
+  height: auto;
   max-width: 100%;
-  max-height: 100%;
+ // max-height: 100%;
   }
 
-div#contactus.container-fluid.anchor-contact {
+div#services.container-fluid.anchor-services {
   height: 700px;
   height: auto;
   max-width: 100%;
@@ -268,7 +286,14 @@ div#contactus.container-fluid.anchor-contact {
   max-height: 100%;
   }
 
-div#contactus.container-fluid.anchor-contact {
+div#contactus.container-fluid.anchor-tarifs {
+  height: 700px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+div#contactus.container-fluid.anchor-articles {
   height: 700px;
   height: auto;
   max-width: 100%;
@@ -460,7 +485,8 @@ div.panel-heading, div.panel.panel-default {
   float: left;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: auto;
+  //width: 60%;
   margin-top: 20px;
 }
 
@@ -495,27 +521,89 @@ div.panel-heading, div.panel.panel-default {
   width: 300px;
 }
 /*****************************************************/
-/*  Min-width = 700px                               */
+/*  MEDIA RULES START                                */
 /*****************************************************/
-@media (min-width: 700px) {
-  .rwd-line {
-    display: inline;
+
+@media (max-width: 760px) {
+  div#index.container-fluid.anchor-about,
+div#index.container-fluid.anchor-about,
+div#services.container-fluid.anchor-services,
+div#tarifs.container-fluid.anchor-tarifs,
+div#articles.container-fluid.anchor-articles   {
+  //max-width: 100%;
+  padding-top: 250px;
+  //max-width: 100%;
+  height: auto;
+  //max-height: 100%;
+  width: auto;
+  //width: 35.3055556%; // 350px;
+  padding-top: 100px;
   }
 
+.border-articles {
+  padding-left: 2px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: auto;
+  //width: 1350px;
+  font-size: 1em;
 }
 
-/*****************************************************/
-/*  Max-width = 480px                                */
-/*****************************************************/
-@media (max-width: 480px) {
-  div#index.container-fluid.anchor-index {
-  max-width: 100%;
-  padding-top: 50px;
-  max-width: 100%;
-  max-height: 100%;
-  }
-
+.navbar-toggle {
+  overflow: visible;
 }
+
+img.logoimg {
+  margin-right: 50px;
+  height: 65px;
+  width: 65px;
+  height: auto;
+}
+
+.navbar{
+ height: auto; //200px;
+ //auto;
+ margin: 5px;
+}
+
+div.navbar-collapse.collapse {
+  //height: 50px!important;
+  //border-style: none;
+  height: 900px;
+  overflow: visible;
+}
+
+//div.navnar-collapes.collapse.in {
+  //height: 200px;
+  //margin-bottom: 100px;
+//}
+
+.navbar-nav {
+  margin-top:0;
+}
+
+.navbar-nav.upper-ul>li>a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+}
+
+
+
+/*****************************************************/
+/*  END OF MEDIA RULES                               */
+/*****************************************************/
+
+//  My logos colors:
+// #254553 or #254451
+// #b2d235 or b3d043
+
+// Other colors
+// #707070
+// #99cc00;
+// #fff
 
 //  My logos colors:
 // #254553 or #254451

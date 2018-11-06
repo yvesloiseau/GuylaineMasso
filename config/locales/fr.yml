@@ -146,7 +146,12 @@ fr:
       article4_para8_underline2: "Fédération québécoise des massothérapeutes agréés."
       article4_para8_suite2: "En visitant le site Internet de ces regroupements, on trouvera une foule d'informations sur le déroulement d'une séance, les bienfaits, les précautions à prendre (en cas de cancer, de diabète, de grossesse, etc.), les différentes formes de soins et de traitements possibles, ainsi qu'un bottin des massothérapeutes accrédités."
     promotion:
-      promotion_encours: "Aucune promotion en ce moment."
+      # promotion_encours: "Aucune promotion en ce moment."
+      promotion_encours: ""
+      promotion_des_fetes_texte1: "Le temps des Fêtes approche à grands pas !"
+      promotion_des_fetes_texte2: "Pourquoi pas gâter vos proches et vous gâter aussi ?"
+      promotion_des_fetes_texte3: "Procurez-vous deux chèques-cadeaux à prix régulier et obtenez le troisième à moitié prix ! "
+      promotion_des_fetes_periode: "Offre prolongée jusqu'au 6 janvier 2019."
       inscrivez_vous: "Inscrivez-vous sur la page Contact pour recevoir les courriels de promotion."
     thank_you:
       mailer_merci: "Merci de m'écrire!"

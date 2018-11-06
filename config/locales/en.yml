@@ -145,6 +145,11 @@ en:
       article4_para8_suite2: "En visitant le site Internet de ces regroupements, on trouvera une foule d'informations sur le déroulement d'une séance, les bienfaits, les précautions à prendre (en cas de cancer, de diabète, de grossesse, etc.), les différentes formes de soins et de traitements possibles, ainsi qu'un bottin des massothérapeutes accrédités."
     promotion:
       promotion_encours: "There are no promotions at this time."
+      promotion_des_fetes_texte1: ""
+      promotion_des_fetes_texte2: ""
+      promotion_des_fetes_texte3: ""
+      promotion_des_fetes_periode: ""
+
       inscrivez_vous: "Fill in your information on the Contact page to receive our promotional emails."
     thank_you:
       mailer_merci: "Thank you for writing!"

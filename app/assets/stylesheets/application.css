@@ -52,7 +52,7 @@ nav {
   }
 
 div.navbar-collapse.collapse {
-  height: 135px!important;
+  /*height: 135px!important;*/
   border-style: none;
   /*height: auto;*/
 }
@@ -250,3 +250,65 @@ footer {
   font-weight: 900;
   color: red;
 }
+
+div.navbar-collapse.collapse {
+  /*height: 135px!important;*/
+  border-style: none;
+  height: auto;
+}
+
+/*****************************************************/
+/*  MEDIA RULES START                                */
+/*****************************************************/
+
+@media (max-width: 760px) {
+.navbar-toggle {
+  overflow: visible;
+}
+
+img.logoimg {
+  margin-right: 50px;
+  height: 65px;
+  width: 65px;
+  height: auto;
+}
+
+.navbar{
+ height: auto; //200px;
+ //auto;
+ margin: 5px;
+}
+
+div.navbar-collapse.collapse {
+  //height: 50px!important;
+  //border-style: none;
+  height: 900px;
+  overflow: visible;
+}
+
+//div.navnar-collapes.collapse.in {
+  //height: 200px;
+  //margin-bottom: 100px;
+//}
+
+.navbar-nav {
+  margin-top:0;
+}
+
+.navbar-nav.upper-ul>li>a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+}
+
+
+
+/*****************************************************/
+/*  END OF MEDIA RULES                               */
+/*****************************************************/
